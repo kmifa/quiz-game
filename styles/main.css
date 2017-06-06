@@ -1,0 +1,202 @@
+*{
+    box-sizing : border-box;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    height : 100%;
+    width : 100%;
+    background-color: #000;
+    line-height : 1.5;
+    color: #fff;
+    
+}
+
+li{
+    list-style: none;
+}
+
+.black-wall{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 1;
+    transition: all 5s;
+}
+
+.black-wall.active{
+    opacity:0.4;
+}
+
+#movie{
+    z-index: -1;
+    position:fixed;
+}
+
+#first-scene{
+    height: 100%;
+    width: 100%;
+    /*display: none;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -220px;
+    margin-top: -80px;
+    display: inline-block;
+    transform: scale(1.5);
+    opacity: 0;
+    transition: all 1.5s;
+}
+
+.logo-active{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.logo-active:hover{
+    cursor: pointer;
+    transition: all .3s;
+    opacity :0.7;
+}
+
+#second-scene{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    
+}
+
+.second-scene-inner{
+    width: 80%;
+    margin: -284px auto 0;
+    height: auto;
+    position: relative;
+    max-width: 640px;
+    top: 50%;
+}
+
+.quiz-count-outer{
+    text-align: center;
+    font-size: 48px;
+}
+
+#quiz-count{
+    
+}
+
+.second-outer{
+    position: absolute;
+    bottom : 5px;
+    right: 10px;
+}
+
+#second{
+    
+}
+
+.question-outer{
+    border: 2px solid #fff;
+    border-radius: 10px;
+    height: 200px;
+    font-size: 22px;
+    padding: 34px 30px 30px;
+    position: relative;
+    /* background-color: rgba(255,255,255,0.2); */
+}
+
+#question{
+    
+}
+
+.quiz-list-outer{
+    
+}
+
+#quiz-list > li{
+    list-style: none;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    font-size: 20px;
+    padding:10px 0;
+    text-align: center;
+    margin-top: 20px;
+    transition: all .3s;
+}
+
+#quiz-list > li:hover{
+    background-color: rgba(255,255,255,0.6);
+    cursor: pointer;
+    color: #000;
+}
+
+#second-scene{
+    display: none;
+    
+}
+
+#third-scene{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    font-size: 50px;
+}
+
+#total-score{
+    position: relative;
+    top: 45%;
+    margin-top: -25px;
+}
+
+.judge{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 3px;
+    width: 100%;
+    margin-left: -30px;
+}
+
+.judge li{
+    margin-right: 10px;
+}
+
+.judge li:last-child{
+    margin-right: 0;
+}
+
+.one-more{
+    position: absolute;
+    top: 54%;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: inline-block;
+    padding: 10px 40px;
+    border-radius: 20px;
+    border: 1px solid #000;
+    transition: all .4s;
+    left: 50%;
+    margin-left: -98px;
+}
+
+.one-more:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #000;
+    cursor: pointer;
+}
